@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_add_herb"
     android:layout_width="match_parent"
@@ -15,14 +16,15 @@
         android:gravity="top|center"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="none"
             android:ems="10"
-            android:id="@+id/editText3"
+            android:id="@+id/editText3_thname"
             android:hint="ชื่อไทย"
             android:layout_marginBottom="12dp"
             android:layout_marginLeft="15dp"
@@ -36,7 +38,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText7"
+            android:id="@+id/editText7_enname"
             android:layout_marginLeft="15dp"
             android:hint="ชื่อสากล"
             android:layout_marginTop="0dp"
@@ -48,7 +50,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText8"
+            android:id="@+id/editText8_sc"
             android:layout_marginLeft="15dp"
             android:hint="ชื่อวิทยาศาสตร์"
             android:layout_marginBottom="12dp"
@@ -59,10 +61,25 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText9"
+            android:id="@+id/editText9_family"
             android:layout_marginLeft="15dp"
             android:hint="วงศ์"
             android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:id="@+id/imageView_add"
+            android:layout_weight="0.46"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:text="เพิ่ม"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_add"
+            android:layout_marginTop="30dp" />
 
     </LinearLayout>
 </RelativeLayout>

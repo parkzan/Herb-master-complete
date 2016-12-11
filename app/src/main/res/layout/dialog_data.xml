@@ -4,7 +4,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:gravity="center_vertical|center_horizontal|center">
+    android:gravity="center_vertical|center_horizontal|center"
+    android:background="@color/colorAccent">
 
 
     <ImageView
@@ -15,14 +16,15 @@
         android:scaleType="centerCrop"
 
 
-        />
+        android:background="@mipmap/ic_launcher" />
 
     <LinearLayout
         android:layout_width="313dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="30dp"
-        android:layout_weight="0.56">
+        android:layout_weight="0.56"
+        android:background="@color/colorAccent">
         <TextView
             android:id="@+id/textTHName"
             android:layout_width="wrap_content"
@@ -30,7 +32,8 @@
             android:layout_marginBottom="10dp"
             android:text="ชื่อ : "
             android:textColor="#000000"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
         <TextView
             android:id="@+id/textENName"
             android:layout_width="wrap_content"
@@ -38,7 +41,8 @@
             android:layout_marginBottom="10dp"
             android:text="ชื่อสามัญ : "
             android:textColor="#000000"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:id="@+id/text_name_science"
@@ -47,7 +51,8 @@
             android:layout_marginBottom="10dp"
             android:text="ชื่อวิทยาศาสตร์ : "
             android:textColor="#000000"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:id="@+id/textFamily"
@@ -56,7 +61,8 @@
             android:layout_marginBottom="10dp"
             android:text="วงศ์ : "
             android:textColor="#000000"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
 
         <Button
             android:id="@+id/buttonOK"

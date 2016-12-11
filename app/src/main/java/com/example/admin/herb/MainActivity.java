@@ -29,15 +29,13 @@ import static com.example.admin.herb.R.layout.content_main_herb_list;
 
 public class MainActivity extends AppCompatActivity {
 
-    SQLiteDatabase mDb;
-    Database mHelper;
-    Cursor mCursor;
-    ArrayList<Herb> dirArray = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(content_main_herb_list);
+
         Intent intent = new Intent(this,MainHerbList.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
 
 

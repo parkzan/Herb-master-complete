@@ -60,7 +60,7 @@ public class MainHerbList extends AppCompatActivity {
                 TextView textVieTHwname = (TextView)dialog.findViewById(R.id.textTHName);
                 textVieTHwname.setText("ชื่อภาษาไทย : "+herb.THname);
                 TextView textViewENname = (TextView) dialog.findViewById(R.id.textENName);
-                textViewENname.setText("ชื่อสามัญ :"+herb.ENname);
+                textViewENname.setText("ชื่อสามัญ : "+herb.ENname);
                 TextView textnamescience = (TextView)dialog.findViewById(R.id.text_name_science);
                 textnamescience.setText("ชื่อวิทยาศาสตร์ : " +herb.SCname);
                 TextView textFamily = (TextView)dialog.findViewById(R.id.textFamily);

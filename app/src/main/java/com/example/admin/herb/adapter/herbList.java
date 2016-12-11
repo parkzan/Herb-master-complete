@@ -30,8 +30,8 @@ public class herbList extends ArrayAdapter<Herb> {
 
     public View getView(int position , View convertViewm ,ViewGroup parent){
         View itemLayout = View.inflate(mcContext,mLayoutResId,null);
-        ImageView HerbpicView = (ImageView) itemLayout.findViewById(R.id.food_image_view);
-        TextView Herbname = (TextView) itemLayout.findViewById(R.id.food_name_text_view);
+        ImageView HerbpicView = (ImageView) itemLayout.findViewById(R.id.herb_image_list);
+        TextView Herbname = (TextView) itemLayout.findViewById(R.id.herb_name_list);
         Herb  herb = mHerbList.get(position);
         Herbname.setText(herb.THname);
 
